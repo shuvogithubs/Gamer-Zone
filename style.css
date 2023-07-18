@@ -219,6 +219,56 @@ right:50px;
 
 
 
+/* icon section */
+.icon img{
+    height: 40px;
+ width: 40px;
+ margin: 0px 10px;
+}
+.first-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   margin-left: 100px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+
+}
+.one p{
+    margin-top: 10px;
+   color: #0B0223;
+    text-align: center;
+    
+    
+
+}
+
+.one{
+    display: flex;
+    margin-right: 50px;
+    
+}
+.one:hover {
+    align-items: center;
+    width: 200px;
+height: 60px;
+border: 2px solid palevioletred;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+Arcade Games
+;
+border-radius: 50px;
+background: #FFF;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+
 /* mobile media */
 @media screen and (max-width:576px) {
     nav {
