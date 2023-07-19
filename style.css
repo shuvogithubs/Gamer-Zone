@@ -2,7 +2,9 @@
     padding: 0px;
     margin: 0px;
     font-family: Work Sans;
+    /* background-color: #F948B2; */
 }
+
 
 nav {
     display: flex;
@@ -92,9 +94,10 @@ nav div {
     gap: 10px;
 
 }
+/* banner-section  */
 .banner-container {
     display: flex;
-    gap: 60px;
+    gap: 10px;
     width: 100%;
     margin-bottom: 7.5rem;
 }
@@ -102,23 +105,25 @@ nav div {
 .banner-first-imgage {
     background-image: url('images/Group\ 14.png');
     background-size: 100%;
-    width: 50%;
+    width: 55%;
+    margin-left: 0px;
+   
 }
 
 .banner-contents {
-    padding: 150px 150px;
+    padding: 150px 215px;
 }
 
 .banner-contents h2 {
     color: #0B0223;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 550;
     text-transform: uppercase;
 }
 
 .banner-contents h1 {
     font-size: 5.93rem;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -128,12 +133,6 @@ nav div {
 }
 
 
-
-/* banner-section */
-.banner-container{
-    margin-left: 50px;
-    margin-right: 50px;
-}
 .banner-contents p {
     margin-top: 1rem;
 }
@@ -150,7 +149,7 @@ nav div {
     padding: 21px 40px;
     color: #FFF;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 550;
     border: 0;
 }
 
