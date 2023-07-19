@@ -77,92 +77,141 @@ nav div {
 }
 
 .nav-follow {
+    display: flex;
+    justify-content: center;
     width: 12.25rem;
-    height: 3.5rem;
+    height: 3rem;
     text-align: center;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     color: #3C354F;
     text-align: center;
-    padding-top: 0.9375rem;
+    padding-top: 1.8rem;
     padding-left: 1.5625rem;
     font-weight: 500;
+    gap: 10px;
 
 }
-
-
-/* goat section */
-.banner-section {
+.banner-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 90px;
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 7.5rem;
 }
 
-.goat {
-    margin-left: 6.25rem;
+.banner-first-imgage {
+    background-image: url('images/Group\ 14.png');
+    background-size: 100%;
+    width: 50%;
 }
 
-.banner-img {
-    /* margin-left: 4rem; */
-    margin-left: 3rem;
-    width: 600px;
-    height: 500px;
-
+.banner-contents {
+    padding: 150px 150px;
 }
 
-.banner-section h4 {
+.banner-contents h2 {
     color: #0B0223;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 550;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.banner-section h3 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
+.banner-contents h1 {
+    font-size: 5.93rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
 }
 
-.banner-section p {
-    color: #534C64;
-    text-align: start;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 5px;
-    padding-top: 16px;
+
+
+/* banner-section */
+.banner-container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.banner-contents p {
+    margin-top: 1rem;
 }
 
-.banner-section button {
-    display: inline-flex;
-    padding: 18px 30px;
-    align-items: flex-start;
-    margin-top: 50px;
-
+.banner-second-imgage img {
+    width: 75%;
+    height: 100%;
+    
 }
 
-.signbtn {
+.btn {
     border-radius: 48px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    margin-top: 2.5rem;
+    padding: 21px 40px;
     color: #FFF;
-
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
 }
 
-.gobtn {
-    border-radius: 48px;
+.btn-primary {
+    background: #FF42A5;
+    margin-right: 10px;
+}
+
+.btn-secondary {
     background: #4EC5F7;
-    color: #FFF;
-    margin-left: 24px;
-
 }
+
+
+/* ------ONLINE------ */
+.online {
+    text-align: center;
+    margin-top: 120px;
+}
+.online-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#online-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-contant {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+.card {
+    /* border: 2px solid red; */
+    width: 18%;
+    margin-right: 20px;
+}
+
+.card>img:hover {
+    filter: grayscale(70%);
+}
+
+.card>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
 
 /* play serction */
 .play-section {
@@ -174,7 +223,6 @@ nav div {
     margin-top: 70px;
 
 }
-
 .play-section h1 {
     text-align: right;
     font-size: 4rem;
@@ -196,6 +244,8 @@ nav div {
     margin-top: 24px;
 
 }
+
+
 
 .play-img {
 
@@ -220,51 +270,85 @@ right:50px;
 
 
 /* icon section */
-.icon img{
-    height: 40px;
- width: 40px;
- margin: 0px 10px;
-}
-.first-icon{
+.icon-section {
+    padding: 120px 200px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.icon-btn {
+    display: flex;
     align-items: center;
-   margin-left: 100px;
-margin-top: 15px;
-margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: #FFF;
+}
+.icon-btn:hover {
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+}
+.icon-btn>p {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+}
 
+
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0B0223;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-titles{
+    color: #FFF;
+    margin-left: 15px;
+    font-size: 2.8125rem;
+    font-weight: 700;
 
 }
-.one p{
-    margin-top: 10px;
-   color: #0B0223;
+.footer-list>ul,
+.footer-social>ul,
+.footer-privacy>ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 25px;
+}
+.footer-list li,
+.footer-social li,
+.footer-privacy li {
+    list-style: none;
+}
+
+.footer-social i {
+    font-size: 25px;
+    color: #FFF;
+}
+
+
+
+.copyright,
+.fotter-privacy {
     text-align: center;
-    
-    
-
-}
-
-.one{
-    display: flex;
-    margin-right: 50px;
-    
-}
-.one:hover {
-    align-items: center;
-    width: 200px;
-height: 60px;
-border: 2px solid palevioletred;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-Arcade Games
-;
-border-radius: 50px;
-background: #FFF;
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
